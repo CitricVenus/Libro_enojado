@@ -4,30 +4,30 @@ public class libr{
                 Titulo,
                 ISBN;
   private  int cantidad;
-  public libr(string Autor, string Editorial, string Titulo, string ISBN,int cantidad){
+  public libr(String Autor, String Editorial, String Titulo, String ISBN,int cantidad){
       this.Autor="";
       this.Editorial="";
       this.Titulo="";
       this.ISBN="";
-      this.int=0;
+      this.cantidad=0;
   }
   public void setautor(){
-    this.Autor=autor;
+    this.Autor=Autor;
   }
   public  void setedit(){
-    this.Editorial=edit;
+    this.Editorial=Editorial;
   }
   public void settit(){
-    this.Titulo=tit;
+    this.Titulo=Titulo;
   }
   public void setisb(){
-    this.ISBN=isbn;
+    this.ISBN=ISBN;
   }
   public void setcant(){
-    this.cantidad=cant;
+    this.cantidad=cantidad;
   }
   public String getautor(){
-    return this.autor;
+    return this.Autor;
   }
   public String getedit(){
     return this.Editorial;
