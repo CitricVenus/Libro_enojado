@@ -1,29 +1,32 @@
+package libr;
 public class libr{
   private String Autor,
                 Editorial,
                 Titulo,
-                ISBN;
-  private  int cantidad;
-  public libr(String Autor, String Editorial, String Titulo, String ISBN,int cantidad){
-      this.Autor="";
-      this.Editorial="";
-      this.Titulo="";
-      this.ISBN="";
-      this.cantidad=0;
+                ISBN,cantidad;
+  public libr(){
+	  this("","","","","");
   }
-  public void setautor(){
+  public libr(String Autor, String Editorial, String Titulo, String ISBN,String cantidad){
+      this.Autor=Autor;
+      this.Editorial=Editorial;
+      this.Titulo=Titulo;
+      this.ISBN=ISBN;
+      this.cantidad=cantidad;
+  }
+  public void setautor(String Autor){
     this.Autor=Autor;
   }
-  public  void setedit(){
+  public  void setedit(String Editorial){
     this.Editorial=Editorial;
   }
-  public void settit(){
+  public void setTitulo(String Titulo){
     this.Titulo=Titulo;
   }
-  public void setisb(){
+  public void setisb(String ISBN){
     this.ISBN=ISBN;
   }
-  public void setcant(){
+  public void setcant(String cantidad){
     this.cantidad=cantidad;
   }
   public String getautor(){
@@ -35,8 +38,14 @@ public class libr{
   public String gettit(){
     return this.Titulo;
   }
-  public int getcant(){
+  public String getcant(){
     return this.cantidad;
   }
-
+  public String toString(){
+	  String nombre=this.Autor+" "+this.Editorial+" "+this.Titulo+" "+this.ISBN+" "+this.cantidad+"";
+	  return nombre;
+  }
+  public void printlibro(){
+	  System.out.println(this);
+  }
 }
